@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    font-family: Arial, sans-serif;
+    background-color: #93d9e9;
+}
+
+.planes {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.plan {
+    flex: 1;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 25px;
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000025;
+}
+
+.plan header {
+    width: calc(100% + 40px);
+    padding: 15px;
+    background-color: salmon;
+    border-radius: 12px 12px 0 0;
+}
+
+.plan h2 {
+    margin: 0;
+}
+
+.precio {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.precio span {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.plan ul {
+    padding-left: 20px;
+    text-align: left;
+    line-height: 2;
+}
+
+.plan a {
+    margin-top: auto;
+    padding: 12px 20px;
+    color: white;
+    background-color:rgb(157, 149, 149);
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+@media (max-width: 750px) {
+    .planes {
+        flex-direction: column;
+    }
+}
